@@ -39,7 +39,11 @@ if st.button("Run TEIP scoring"):
     if checkpoint.exists():
         result = run_model(df, cfg, str(checkpoint)); st.success("Predictions generated using trained checkpoint.")
     else:
-        result = fallback_score(df); st.warning("No trained checkpoint found. Showing fallback demo scores only.")
+        result = fallback_score(df); st.warning(
+    "No trained TEIP checkpoint is currently deployed. "
+    "These are fallback demo scores for interface testing only, "
+    "not model-based biological predictions."
+)
     result = result.sort_values("teip_score", ascending=False)
     st.subheader("Ranked candidates"); st.dataframe(result, use_container_width=True)
     st.download_button("Download predictions", result.to_csv(index=False), file_name="teip_predictions.csv", mime="text/csv")
