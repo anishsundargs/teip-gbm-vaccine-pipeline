@@ -16,6 +16,15 @@ st.title("TEIP: GBM Vaccine Target Prioritization")
 st.caption("Research-use peptide-HLA prioritization. Not clinically validated.")
 st.warning("TEIP is for research use only. It does not diagnose disease, prove vaccine efficacy, or make clinical treatment recommendations.")
 uploaded = st.file_uploader("Upload candidate peptide-HLA CSV", type=["csv"])
+example_path = ROOT / "data" / "example_input.csv"
+if example_path.exists():
+    example_df = pd.read_csv(example_path)
+    st.download_button(
+        "Download example input CSV",
+        example_df.to_csv(index=False),
+        file_name="example_input.csv",
+        mime="text/csv",
+    )
 with st.expander("Required columns"):
     st.code("\n".join(REQUIRED_COLUMNS))
 if uploaded is None:
