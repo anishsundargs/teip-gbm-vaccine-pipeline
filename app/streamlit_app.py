@@ -11,8 +11,7 @@ st.caption("Research-use peptide-HLA prioritization. Not clinically validated.")
 st.warning("TEIP is for research use only. It does not diagnose disease, prove vaccine efficacy, or make clinical treatment recommendations.")
 uploaded = st.file_uploader("Upload candidate peptide-HLA CSV", type=["csv"])
 with st.expander("Required columns"):
-    st.code("
-".join(REQUIRED_COLUMNS))
+    st.code("\n".join(REQUIRED_COLUMNS))
 if uploaded is None:
     st.info("Upload a CSV or use the example file in data/example_input.csv."); st.stop()
 df = pd.read_csv(uploaded)
