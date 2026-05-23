@@ -9,7 +9,7 @@ This repository contains a reproducible prototype implementation including pepti
 ## Quick start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/teip-gbm-vaccine-pipeline.git
+git clone https://github.com/anishsundargs/teip-gbm-vaccine-pipeline.git
 cd teip-gbm-vaccine-pipeline
 pip install -r requirements.txt
 python scripts/predict_batch.py --input data/example_input.csv --output outputs/example_predictions.csv --config configs/config.yaml --allow_fallback
