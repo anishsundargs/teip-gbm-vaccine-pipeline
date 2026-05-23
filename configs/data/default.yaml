@@ -1,0 +1,6 @@
+data_csv: data/example_training.csv
+batch_size: 32
+val_fraction: 0.2
+num_workers: 0
+max_pep: 11
+max_hla: 34
