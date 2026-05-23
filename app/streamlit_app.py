@@ -1,6 +1,12 @@
 from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
 import pandas as pd
 import streamlit as st
+
 from teip.datamodule import REQUIRED_COLUMNS
 from scripts.predict_batch import fallback_score, run_model
 from teip.config import load_config
