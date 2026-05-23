@@ -6,6 +6,13 @@ This repository contains a reproducible prototype implementation including pepti
 
 > **Research-use only.** TEIP is not clinically validated and must not be used for medical diagnosis, treatment selection, or patient care.
 
+## Public UI
+
+A public research-use demonstration interface is available here:
+
+https://teip-gbm-vaccine-pipeline.streamlit.app/
+
+The deployed interface currently supports CSV upload, candidate ranking, downloadable predictions, and demo fallback scoring when no trained checkpoint is deployed.
 ## Quick start
 
 ```bash
