@@ -10,7 +10,10 @@ This repository contains a reproducible prototype implementation including pepti
 
 A public research-use demonstration interface is available here:
 
-https://teip-gbm-vaccine-pipeline.streamlit.app/
+Landing page: https://anishsundargs.github.io/teip-gbm-vaccine-pipeline/
+Public UI: https://teip-gbm-vaccine-pipeline.streamlit.app/
+
+
 
 The deployed interface currently supports CSV upload, candidate ranking, downloadable predictions, and demo fallback scoring when no trained checkpoint is deployed.
 ## Quick start
