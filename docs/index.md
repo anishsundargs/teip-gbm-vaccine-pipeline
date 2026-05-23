@@ -1,4 +1,6 @@
-# TEIP-GBM Vaccine Pipeline
+---
+title: TEIP-GBM Vaccine Pipeline
+---
 
 **TEIP** (Tumor Epitope Immunogenicity Pipeline) is a research-use computational framework for **glioblastoma (GBM) vaccine target prioritization**. The pipeline supports candidate **peptide-HLA scoring**, **OIP5-derived epitope analysis**, and computational ranking of potential GBM immunotherapy targets.
 
@@ -14,17 +16,13 @@ TEIP is designed for bioinformatics and engineering research involving:
 
 ## Public TEIP Web App
 
-Use the public research demo here:
-
-https://teip-gbm-vaccine-pipeline.streamlit.app/
+[Open the TEIP public web app](https://teip-gbm-vaccine-pipeline.streamlit.app/)
 
 The web app allows users to upload candidate peptide-HLA CSV files and receive ranked TEIP candidate scores.
 
 ## Source Code
 
-The TEIP source code is available on GitHub:
-
-https://github.com/anishsundargs/teip-gbm-vaccine-pipeline
+[View the TEIP GitHub repository](https://github.com/anishsundargs/teip-gbm-vaccine-pipeline)
 
 ## What TEIP does
 
